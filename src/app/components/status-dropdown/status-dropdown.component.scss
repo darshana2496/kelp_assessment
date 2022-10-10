@@ -1,5 +1,5 @@
 @import '../../../assets/css/app-font.css';
-@import '/src/app/styles/variables';
+@import '../../styles/variables';
 
 
 .container {
@@ -41,7 +41,7 @@
                 display: flex;
                 align-items: center;
                 padding: 16px 0px 16px 12px;
-                gap: 9px;
+                gap: 7px;
                 cursor: pointer;
     
                 .icon {
