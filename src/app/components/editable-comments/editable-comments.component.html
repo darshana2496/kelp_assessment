@@ -1,0 +1,22 @@
+<div class="comment-container">
+
+  <ng-container *ngIf="!showInput">
+    <div class="text-box">
+      <p class="content">{{comment}}</p>
+    </div>
+    <div class="more-menu" (click)="openDropdown()">
+      <img src="../../../assets/icons/group.svg" />
+    </div>
+  </ng-container>
+
+  <div class="editor-container" *ngIf="showInput">
+    <textarea cols="12" rows="3" class="textarea" (blur)="hideEditor()">{{comment}}</textarea>
+  </div>
+
+  <div class="options" *ngIf="showDropdown">
+    <ul>
+      <li (click)="editComment()">edit comment</li>
+      <li>hide candidate</li>
+    </ul>
+  </div>
+</div>

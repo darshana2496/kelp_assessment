@@ -1,0 +1,116 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+.page-container{
+    padding: 37px 54px;
+
+    .offer-extended {
+        margin-bottom: 39px;
+    }
+    .section-title {
+        margin-bottom: 14px;
+
+        .title {
+            font-family: $font-regular;
+            font-weight: $font-weight-semibold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-black;
+        }
+    }
+
+    .section-title-prospects {
+        margin-bottom: 7px;
+        .title {
+            font-family: $font-regular;
+            font-weight: $font-weight-semibold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-black;
+        }
+    }
+
+
+    .interview-details-container {
+
+        .card-container {
+            background: $color-white;
+            border: 1px solid $color-light-grey;
+            padding: 13px 0px;
+            align-items: center;
+            display: flex;
+            gap: 0;
+
+            .basic-data {
+                padding: 0px 14px;
+            }
+
+
+            .candidate-actions{ 
+                display: flex;
+                align-items: center;
+            }
+        
+            .candidate-actions .info-col:not(:last-child) {
+                border-right: 1px solid rgba(230,230,230,0.5)
+            }
+        
+            .info-col {
+                padding: 0 20px;
+                text-align: center;
+                width: 75px;
+                display: block;
+                min-height: 58px;
+        
+                .label{
+                    font-family: $font-regular;
+                    font-weight: $font-weight-regular;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: $color-grey;
+                }
+        
+                .info {
+                    font-family: $font-regular;
+                    font-weight: $font-weight-regular;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: $color-black;
+                    margin: 0;
+                }
+        
+                .icon {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        
+            .score-data {
+                display: flex;
+                width: 100%;
+            }
+            .score {
+                font-family: $font-regular;
+                font-weight: $font-weight-regular;
+                font-size: 18px;
+                line-height: 28px;
+                color: $color-black;
+                padding: 0 36px 0 36px;
+                width: 100%;
+            }
+
+            .score:first-child {
+                text-align: right;
+            }
+
+            .score:not(:last-child) {
+                border-right: 1px solid rgba(230,230,230,0.5)
+            }
+
+            .comments-section {
+                padding: 13px 22px;
+            }
+        }
+
+    }
+}

@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-bg
+}
+
+p{
+    margin: 0;
+}
+
+.mat-body p, .mat-body-1 p, .mat-typography .mat-body p, .mat-typography .mat-body-1 p, .mat-typography p {
+    margin: 0;
+}
+
+ngx-slick-carousel .slick-track:before, .slick-track:after {
+    content: none !important;
+}
+
+ngx-slick-carousel .slick-slide:not(:last-child) {
+    width: auto !important;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-right: 1px solid rgba($color: $color-faded-grey, $alpha: 0.5);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,36 @@
+<div class="card-container">
+
+  <div class="card-content">
+    <app-user-detail [userData]="userExtended"></app-user-detail>
+
+    <div class="candidate-actions">
+      <div class="info-col">
+        <p class="label">Offer Extended on</p>
+        <p class="info">21 Jul 2020</p>
+      </div>
+      <div class="info-col">
+        <p class="label">Offer Accepted on</p>
+        <p class="info">23 Jul 2020</p>
+      </div>
+      <div class="info-col">
+        <p class="label">Date of Joining</p>
+        <p class="info">1 Sep 2020</p>
+      </div>
+      <div class="info-col">
+        <p class="label">Joining Status</p>
+        <app-status-dropdown></app-status-dropdown>
+      </div>
+      <div class="info-col">
+        <p class="label">B.V</p>
+        <app-status-dropdown></app-status-dropdown>
+      </div>
+
+    </div>
+
+    <div class="comments-section">
+      <app-editable-comments
+        comment="Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Quisque odio morbi sod tea aliquet vulputate.teame">
+      </app-editable-comments>
+    </div>
+  </div>
+</div>

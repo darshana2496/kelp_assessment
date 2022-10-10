@@ -1,0 +1,50 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+.card-container {
+    background: $color-white;
+    border: 1px solid $color-light-grey;
+    padding: 13px 14px;
+
+    .card-content {
+        display: flex;
+        gap: 45px;
+    }
+
+    .candidate-actions{ 
+        display: flex;
+        gap: 17px;
+    }
+
+    .candidate-actions .info-col:not(:last-child) {
+        padding-right: 17px;
+        border-right: 1px solid rgba(230,230,230,0.5)
+    }
+
+    .info-col {
+
+        .label{
+            font-family: $font-regular;
+            font-weight: $font-weight-regular;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-grey;
+            margin: 0;
+        }
+
+        .info {
+            font-family: $font-regular;
+            font-weight: $font-weight-regular;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-black;
+            margin: 0;
+        }
+
+
+    }
+
+    .comments-section {
+        
+    }
+}

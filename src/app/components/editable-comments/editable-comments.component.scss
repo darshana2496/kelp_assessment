@@ -1,0 +1,79 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+.comment-container {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    position: relative;
+
+    .text-box {
+        width: 296px;
+
+        .content {
+            font-weight: $font-weight-regular;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: $font-regular;
+            color: $color-grey;
+        }
+    }
+
+    .more-menu {
+        cursor: pointer;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .editor-container {
+        border: 1px solid rgba($color: $color-faded-grey, $alpha: 0.5);
+        width: 290px;
+        height: 60px;
+        padding: 4px 3px;
+
+        .textarea {
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 100%;
+            color: $color-grey;
+        }
+    }
+
+    .options {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 178px;
+        background: $color-white;
+        border: 0.2px solid $color-medium-grey;
+        box-shadow: 0px 6px 10px rgba(188, 188, 188, 0.357988);
+        border-radius: 5px;
+        z-index: 1;
+
+        ul {
+            margin: 0;
+            padding:7px 21px 7px 22px;
+            list-style-type: none;
+
+            li {
+                margin: 0;
+                padding: 17px 10px;
+                font-weight: $font-weight-black;
+                font-size: 13px;
+                line-height: 18px;
+                font-family: $font-regular;
+                text-transform: uppercase;
+                color: $color-grey;
+                cursor: pointer;
+            }
+
+            li:not(:last-child) {
+                border-bottom: 1px solid rgba($color: $color-faded-grey, $alpha: 0.5);
+            }
+        }
+    }
+}

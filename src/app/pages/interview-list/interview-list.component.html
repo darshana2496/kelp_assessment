@@ -1,0 +1,68 @@
+<app-page-header></app-page-header>
+
+<div class="page-container">
+
+  <section class="offer-extended">
+    <div class="section-title">
+      <p class="title">Offer Extended</p>
+    </div>
+    <app-candidate-row-detail></app-candidate-row-detail>
+  </section>
+
+
+  <section class="offer-extended">
+    <div class="section-title-prospects">
+      <p class="title">Prospects</p>
+    </div>
+    <app-interview-details></app-interview-details>
+  </section>
+
+
+  <section class="offer-extended">
+    <div class="section-title">
+      <p class="title">Dropped</p>
+    </div>
+
+
+    <div class="interview-details-container">
+      <div class="card-container" *ngFor="let item of droppedList">
+        <div class="basic-data">
+          <app-user-detail [userData]="item"></app-user-detail>
+        </div>
+        <div>
+          <div class="candidate-actions">
+            <div class="info-col">
+              <img src="../../../assets/images/like.png" class="icon" />
+              <p class="label">Hire</p>
+              <p class="info">1 Jul 2018</p>
+            </div>
+            <div class="info-col">
+              <p class="label">Awaiting Feedback</p>
+            </div>
+            <div class="info-col">
+              <img src="../../../assets/images/unselected.png" class="icon" />
+              <p class="label">Undecided</p>
+              <p class="info">1 Jul 2018</p>
+            </div>
+            <div class="info-col">
+              <img src="../../../assets/images/calendar.png" class="icon" />
+              <p class="label">1 Jul 2018</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="score-data">
+          <span class="score">7</span>
+          <span class="score">9</span>
+        </div>
+        <div class="comments-section">
+          <app-editable-comments
+            comment="Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Quisque odio morbi sod tea aliquet vulputate.teame">
+          </app-editable-comments>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>

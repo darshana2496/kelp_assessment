@@ -1,0 +1,22 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+.header-container {
+    display: flex;
+    padding: 25px 35px;
+    background: #ffffff;
+    box-shadow: 0px 3px 8px rgba(117, 117, 117, 0.0837579);;
+}
+
+.backBtn {
+    margin: auto 19px auto 0px;
+}
+
+.page-title {
+    font-family: $font-regular;
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+color: $color-black;
+}

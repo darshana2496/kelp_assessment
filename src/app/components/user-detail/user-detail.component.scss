@@ -1,0 +1,62 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    .user-thumbnail {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #BCBDBE;
+        position: relative;
+    
+        img {
+            width: 100%;
+        }
+
+        .user-initial {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-weight: $font-weight-extra-bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color-white;
+        }
+    }
+
+    .details {
+        width: 235px;
+        
+        .user-name {
+            font-family: $font-regular;
+            font-weight: $font-weight-regular;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-black;
+            margin-bottom: 1px;
+        }
+
+        .user-designation {
+            font-family: $font-regular;
+            font-weight: $font-weight-regular;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-grey;
+        }
+
+        .user-location {
+            font-family: $font-regular;
+            font-weight: $font-weight-regular;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-grey;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="status-dropdown-container" (click)="openDropdown()" tabindex="1">
+    <div class="status-icon">
+      <img src="../../../assets/images/selected.png" />
+    </div>
+    <img src="../../../assets/icons/down-arrow.svg" />
+  </div>
+
+  <div class="dropdown-options" *ngIf="showOptions">
+    <ul>
+      <li>
+        <img src="../../../assets/images/selected.png" class="icon" />
+        <div class="selected"></div>
+      </li>
+      <li>
+        <img src="../../../assets/images/average.png" class="icon" />
+      </li>
+      <li>
+        <img src="../../../assets/images/rework.png" class="icon" />
+      </li>
+    </ul>
+  </div>
+</div>

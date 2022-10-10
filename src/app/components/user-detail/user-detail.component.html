@@ -1,0 +1,13 @@
+<div class="user-container" *ngIf="userData">
+  <div class="user-thumbnail">
+    <img [src]="userData.image" *ngIf="userData.image" />
+    <img src="../../../assets/images/thumbnail.png" *ngIf="!userData.image" />
+    <span class="user-initial" *ngIf="!userData.image">{{userData.name.substring(0,1)}}</span>
+  </div>
+
+  <div class="details">
+    <p class="user-name">{{userData.name}}</p>
+    <p class="user-designation">{{userData.designation}}</p>
+    <p class="user-location">{{userData.location}}</p>
+  </div>
+</div>

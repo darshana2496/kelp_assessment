@@ -1,0 +1,65 @@
+@import '../../../assets/css/app-font.css';
+@import '/src/app/styles/variables';
+
+
+.container {
+    position: relative;
+
+    .status-dropdown-container{
+        display: flex;
+        gap: 12px;
+        margin-top: 2px;
+        margin-left: 3px;
+        align-items: center;
+        cursor: pointer;
+    
+        .status-icon {
+            width: 24px;
+            height: 24px;
+    
+            img {    
+                width: 100%;
+            }
+        }
+    }
+    
+    .dropdown-options {
+        position: absolute;
+        top: 30px;
+        width: 70px;
+        background-color: $color-white;
+        border: 0.2px solid $color-medium-grey;
+        box-shadow: 0px 6px 10px rgb(188 188 188 / 36%);
+        border-radius: 5px;
+    
+        ul {
+            margin: 0;
+            padding: 4px 12px;
+            list-style-type: none;
+    
+            li {
+                display: flex;
+                align-items: center;
+                padding: 16px 0px 16px 12px;
+                gap: 9px;
+                cursor: pointer;
+    
+                .icon {
+                    width: 18px;
+                    height: 18px;
+                }
+    
+                .selected{
+                    width: 6px;
+                    height: 6px;
+                    background-color: $color-light-orange;
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+        li:not(:last-child) {
+            border-bottom: 1px solid rgba($color: $color-faded-grey, $alpha: 0.5);
+        }
+    }
+}
